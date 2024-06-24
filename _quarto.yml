@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "demodash"
+  title: "Demo"
   navbar:
     left:
       - href: index.qmd
@@ -11,9 +12,14 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      cosmo
+    lang: es
     css: styles.css
     toc: true
+    code-block-border-left: "darkorange"
+    code-block-bg: true
+    fig-align: left
 
 
 
