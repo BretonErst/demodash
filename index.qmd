@@ -1,0 +1,8 @@
+---
+title: "Prueba y Demostración"
+---
+
+Esto es una prueba
+
+
+[Desempeño del IGAE](econo.qmd)
