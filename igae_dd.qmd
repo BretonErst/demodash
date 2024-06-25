@@ -115,9 +115,7 @@ bslib::value_box(
 ```
 :::
 
-
 ::: {.card title="Variación de los componentes"}
-
 ```{r}
 #| label: variacion de los componentes
 
@@ -218,10 +216,7 @@ tbl_varia |>
   tab_spanner(columns = c(año_ant, mes_ant), 
               label = "Periodo")
 ```
-
-
 :::
-
 
 ## Column {width="65%"}
 
@@ -349,9 +344,7 @@ df_global_02 <- df_global_01 %>%
   unnest(everything())
 ```
 
-
 ::: {.card title="Crecimiento Acumulado del Último Sexenio"}
-
 ```{r}
 #| label: crecimiento acumulado sexenio
 
@@ -377,14 +370,11 @@ bslib::value_box(
                           accuracy = 0.01)
 )
 ```
-
-
 :::
 
 ## Column {width="65%"}
 
 ::: {.card title="Comparación del Desempeño del IGAE por Sexenio"}
-
 ```{r}
 #| label: visualización escalada de los sexenios
 
@@ -397,14 +387,7 @@ df_global_02 %>%
   ggplot(aes(x = mes_sexenio,
              y = escalado,
              color = presidente)) +
-  geom_line(alpha = 0.6) +
-  # geom_text_repel(aes(label = last_val),
-  #                 direction = "y",
-  #                 hjust = -3,
-  #                 segment.size = 1,
-  #                 segment.alpha = 0.5,
-  #                 nudge_y = -0.01,
-  #                 segment.linetype = "dotted") +
+  geom_line(alpha = 0.65) +
   scale_color_manual(name = "Presidente",
                      values = c("#34495E", "#F39C12", "#16A085", 
                                 "#8E44AD", "#9F0D08")) +
@@ -423,6 +406,4 @@ df_global_02 %>%
                                         length.out = 10),
                                     digits = 0))
 ```
-
-
 :::
