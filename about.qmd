@@ -1,9 +1,8 @@
 ---
-title: "About"
+title: "Juan L. Bretón, PMP"
+about:
+  template: jolla
+  image: images/icon_jlb.jpg
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Data science practitioner.
