@@ -115,7 +115,7 @@ bslib::value_box(
 ```
 :::
 
-::: {.card title="Variación de los componentes"}
+#::: {.card title="Variación de los componentes"}
 ```{r}
 #| label: variacion de los componentes
 
@@ -205,18 +205,18 @@ tbl_varia <-
               (terc_mes_act - terc_mes_ant) / terc_mes_ant)
 )
 
-tbl_varia |> 
-  gt() |> 
-  tab_header(title = "Variación Periódica de Componentes del IGAE") |> 
-  fmt_percent(columns = c(año_ant, mes_ant), decimals = 4) |> 
-  cols_label(indicador ~ "Componente",
-             año_ant ~ "12 meses anteriores",
-             mes_ant ~ "Mes anterior") |> 
-  opt_align_table_header(align = "left") |> 
-  tab_spanner(columns = c(año_ant, mes_ant), 
-              label = "Periodo")
+# tbl_varia |> 
+#   gt() |> 
+#   tab_header(title = "Variación Periódica de Componentes del IGAE") |> 
+#   fmt_percent(columns = c(año_ant, mes_ant), decimals = 4) |> 
+#   cols_label(indicador ~ "Componente",
+#              año_ant ~ "12 meses anteriores",
+#              mes_ant ~ "Mes anterior") |> 
+#   opt_align_table_header(align = "left") |> 
+#   tab_spanner(columns = c(año_ant, mes_ant), 
+#               label = "Periodo")
 ```
-:::
+#:::
 
 ## Column {width="65%"}
 
