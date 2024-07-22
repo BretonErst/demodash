@@ -107,15 +107,13 @@ mes_actual <- df01 %>%
 # value box
 bslib::value_box(
   paste("Variación respecto a", 
-        format(ulti_fecha - month(1), "%B %Y")),
+        format(ulti_fecha - month(2), "%B %Y")),
   theme = "primary",
   value = scales::percent((mes_actual - mes_anterior) / mes_anterior,
                           accuracy = 0.01)
 )
 ```
 :::
-
-
 
 ```{r}
 #| label: variacion de los componentes
@@ -217,8 +215,6 @@ tbl_varia <-
 #   tab_spanner(columns = c(año_ant, mes_ant), 
 #               label = "Periodo")
 ```
-
-
 
 ## Column {width="65%"}
 
